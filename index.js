@@ -93,41 +93,41 @@
 // <!-- 3.] on click button change bg color  -->
 
 
-var btn = document.querySelector('button');
-var newDiv = document.querySelector('body div');
-var fontColor = document.getElementById('text');
+// var btn = document.querySelector('button');
+// var newDiv = document.querySelector('body div');
+// var fontColor = document.getElementById('text');
 
-function chnageColor(){
-    // btn.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")";
-    newDiv.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")";
-//    fontColor.style.color = "rgb(" + Math.floor(Math.random() * 250) + "," + Math.floor(Math.random() * 250) + "," + Math.floor(Math.random() * 250) + ")";
-   fontColor.style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
-   console.log("color code is #" + Math.floor(Math.random()*16777215).toString(16));
-
-
-    // var codeDiv = document.getElementsByClassName('header');
-    // var h1 = document.createElement('h1');
-    // h1.innerText = "hi";
-    // codeDiv.appendChild(h1);
-
-    // var h1 = document.createElement('h1');
-    // div.appendChild(h1);
-    // h1.createTextNode(text);
+// function chnageColor(){
+//     // btn.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")";
+//     newDiv.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")";
+// //    fontColor.style.color = "rgb(" + Math.floor(Math.random() * 250) + "," + Math.floor(Math.random() * 250) + "," + Math.floor(Math.random() * 250) + ")";
+//    fontColor.style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
+//    console.log("color code is #" + Math.floor(Math.random()*16777215).toString(16));
 
 
-};
+//     // var codeDiv = document.getElementsByClassName('header');
+//     // var h1 = document.createElement('h1');
+//     // h1.innerText = "hi";
+//     // codeDiv.appendChild(h1);
 
-btn.addEventListener('click' , function(){
-    chnageColor();
-});
+//     // var h1 = document.createElement('h1');
+//     // div.appendChild(h1);
+//     // h1.createTextNode(text);
+
+
+// };
+
+// btn.addEventListener('click' , function(){
+//     chnageColor();
+// });
 
 // add div and show color code 
 
 
-const codeDiv = document.getElementsByClassName("header");
-codeDiv.innerHTML = "Hello, World!";
-const parent = document.querySelector("body");
-parent.appendChild(codeDiv);
+// const codeDiv = document.getElementsByClassName("header");
+// codeDiv.innerHTML = "Hello, World!";
+// const parent = document.querySelector("body");
+// parent.appendChild(codeDiv);
 
 
 
@@ -136,3 +136,7 @@ parent.appendChild(codeDiv);
 // var h1 = document.createElement('h1');
 // h1.innerText = "hi";
 // codeDiv.appendChild(h1);
+
+
+// on click inc or dec font size 
+
