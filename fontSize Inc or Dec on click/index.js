@@ -1,38 +1,4 @@
-// <!-- 2.] on click button it change remdome color for text color and body background color also that color code show after button  -->
-
-
-// <!-- 2.1] on click button it change remdome color for text and background and that color code show in console  -->
-
-
-// var btn = document.querySelector('button');
-// var newDiv = document.querySelector('body div');
-// var fontColor = document.getElementById('text');
-
-// function chnageColor(){
-//     // btn.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")";
-//     newDiv.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")";
-// //    fontColor.style.color = "rgb(" + Math.floor(Math.random() * 250) + "," + Math.floor(Math.random() * 250) + "," + Math.floor(Math.random() * 250) + ")";
-//    fontColor.style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
-//    console.log("color code is #" + Math.floor(Math.random()*16777215).toString(16));
-
-
-//     // var codeDiv = document.getElementsByClassName('header');
-//     // var h1 = document.createElement('h1');
-//     // h1.innerText = "hi";
-//     // codeDiv.appendChild(h1);
-
-//     // var h1 = document.createElement('h1');
-//     // div.appendChild(h1);
-//     // h1.createTextNode(text);
-
-
-// };
-
-// btn.addEventListener('click' , function(){
-//     chnageColor();
-// });
-
-
+// <!-- 4.] on click change font size like if you click on +font then font size would be inc and if you click on -font then font size would be Dec   -->
 
 // <!-- 2.2] add div and it's show color code for text and background -->
 

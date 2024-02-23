@@ -45,8 +45,8 @@ body {
     outline: none;
     text-align: center;
     display: inline-block;
-    transition: 0.3s;
     min-width: 200px;
+    transition: 0.3s;
 }
 
 #button_div button#button:hover {
