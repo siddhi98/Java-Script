@@ -1,96 +1,7 @@
-// 1]. change number font size, font color, bg img project
+// <!-- 2.] on click button it change remdome color for text color and body background color also that color code show after button  -->
 
 
-// var newNum = document.getElementById('number');
-// var currentNum = newNum.innerText;
-
-
-// var set = setInterval( function(){
-//     currentNum = currentNum > 0 ? currentNum - 1 : 0;
-//     newNum.innerHTML = currentNum;
-
-//     newBG = currentNum % 2 === 0 ? "url('hills-mountain.jpg')" : "url('bird-green-tree.jpg')";
-//     newColor = currentNum % 2 === 0 ? "#9016c9" : "#ffffff";
-
-//     document.getElementById('img').style.backgroundImage = newBG;
-//     newSize = document.getElementById('number').style.fontSize = currentNum  * 30 + "px";
-//     document.getElementById('number').style.color = newColor;
-
-//     if ( currentNum <= 0 ){
-//         clearInterval(set);
-//         document.getElementById('number').style.fontSize = 25+ "px";
-//         document.getElementById('number').style.color = "#ffffff";
-//     };
-// }, 1000);
-
-
-// <!-- 2.] on click button show popup  -->
-
-
-// var btn = document.getElementById('button');
-
-
-
-// function BtnClick(){
-//     alert('Button Clicked');
-// };
-
-// btn.onclick = BtnClick;
-
-// function movecolor(){
-//     btn.style.backgroundColor = "#ba4242ba";
-//     btn.style.color = "#ffffff";
-// };
-
-// function mouseoutColor(){
-//     btn.style.backgroundColor = "#20218bba";
-//     btn.style.color = "#f6b5b5";
-// };
-
-// function mouseFocus(){
-//     btn.style.color = "#656565";
-// };
-
-// function mouseenter(){
-//     btn.style.backgroundColor = "#468f49ba";
-//     btn.style.color = "#ffffff";
-// };
-
-// function mouseleave(){
-//     btn.style.backgroundColor = "#eb8906ba";
-//     btn.style.color = "#000000";
-// };
-
-// btn.addEventListener('mousemove', function(){
-//     movecolor(); 
-//     console.log("Mouse Move");
-// });
-
-// btn.addEventListener('mouseout', function(){
-//     mouseoutColor();
-//     console.log("Mouse Out");
-// });
-
-// btn.addEventListener('focus', function(){
-//     mouseFocus();
-//     console.log("Mouse Focus");
-// });
-
-// btn.addEventListener('mouseenter', function(){
-//     mouseenter();
-//     console.log("Mouse Enter");
-// });
-
-// btn.addEventListener('mouseleave', function(){
-//     mouseleave();
-//     console.log("Mouse Leave");
-// });
-
-
-// btn.addEventListener('click', BtnClick)
-
-// <!-- 2.] on click button it change remdome color for text and background and that color code show in console  -->
-
+// <!-- 2.1] on click button it change remdome color for text and background and that color code show in console  -->
 
 
 // var btn = document.querySelector('button');
@@ -123,7 +34,7 @@
 
 
 
-// <!-- 2.1] add div and it's show color code for text and background -->
+// <!-- 2.2] add div and it's show color code for text and background -->
 
 var btn = document.querySelector('button');
 var newDiv = document.querySelector('body div');
