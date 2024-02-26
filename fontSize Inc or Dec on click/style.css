@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: unset;
+    /* height: 100%; */
 }
 
 
@@ -26,6 +27,21 @@ body {
     color: #000000;
     font-family: cursive;
     text-transform: capitalize;
+}
+
+.body-text {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.dummy-text {
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    font-family: cursive;
 }
 
 .font-dec,

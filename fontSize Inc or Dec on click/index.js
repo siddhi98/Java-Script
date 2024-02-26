@@ -1,41 +1,37 @@
 // <!-- 4.] on click change font size like if you click on +font then font size would be inc and if you click on -font then font size would be Dec   -->
 
-// <!-- 2.2] add div and it's show color code for text and background -->
-
-var btn = document.querySelector('button');
-var newDiv = document.querySelector('body div');
-var fontColor = document.getElementById('text');
+var btn_Dec = document.querySelector('.font-dec-btn');
+var btn_Inc = document.querySelector('.font-inc-btn');
+var textSize = document.getElementById('text');
 
 
 // fetch text font size 
 
-    var currentColor = window.getComputedStyle(fontColor).color;
+    var currentFontSize = window.getComputedStyle(textSize).fontSize;
 
-    var currentbgColor = window.getComputedStyle(newDiv).backgroundColor;
+    currentFontSize = parseInt(currentFontSize.substr(0,(currentFontSize.length - 2)));
+
+    // textSize.style.fontSize = parseInt(currentFontSize) + 16 + 'px';
+    // console.log(window.getComputedStyle(textSize).fontSize);
 
 
-function chnageColor(){
-    newDiv.style.backgroundColor = "rgb(" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")";
-    fontColor.style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
-   
-// text color code
-    var currentColor = window.getComputedStyle(fontColor).color;
-    var hexColor = rgbToHex(currentColor);
-    console.log("text color code is " + hexColor);
-    new_div.innerHTML = "text color code is " + hexColor;
 
-//  body background color code
+function funbtn_Inc() {
+    currentFontSize += 10
+    textSize.style.fontSize = currentFontSize;
+};
 
-var currentbgColor = window.getComputedStyle(newDiv).backgroundColor;
-var hexbgColor = rgbToHex(currentbgColor);
-console.log("Body Background color code is " + hexbgColor);
-new_body_div.innerHTML = "Body Background color code is " + hexbgColor;
-   
-
+function funbtn_Dec() {
+    currentFontSize -= 10
+    textSize.style.fontSize = currentFontSize;
 };
 
 
-btn.addEventListener('click' , function(){
-    chnageColor();
+btn_Inc.addEventListener('click' , function(){
+    funbtn_Inc();
 });
 
+
+btn_Dec.addEventListener('click' , function(){
+    funbtn_Dec();
+});
