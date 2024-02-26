@@ -6,40 +6,12 @@ var btn = document.querySelector('button');
 var newDiv = document.querySelector('body div');
 var fontColor = document.getElementById('text');
 
-// Add Div 
 
-var new_div = document.createElement('div');
-document.getElementById('button_div').appendChild(new_div);
-new_div.classList.add('text-color')
-var new_body_div = document.createElement('div');
-document.getElementById('button_div').appendChild(new_body_div);
-new_body_div.classList.add('body-text-color')
-
-// fetch color or css 
+// fetch text font size 
 
     var currentColor = window.getComputedStyle(fontColor).color;
 
     var currentbgColor = window.getComputedStyle(newDiv).backgroundColor;
-
-
-
-// Convert RGB to Hex:
-
-function rgbToHex(rgb) {
-    var rgbArray = rgb.match(/\d+/g);
-    var hex = '#' + ('0' + parseInt(rgbArray[0], 10).toString(16)).slice(-2) +
-                   ('0' + parseInt(rgbArray[1], 10).toString(16)).slice(-2) +
-                   ('0' + parseInt(rgbArray[2], 10).toString(16)).slice(-2);
-    return hex;
-}
-
-var hexColor = rgbToHex(currentColor);
-new_div.innerHTML = "text color code is " + hexColor;
-
-var hexbgColor = rgbToHex(currentbgColor);
-new_body_div.innerHTML = "Body Background color code is " + hexbgColor;
-
-
 
 
 function chnageColor(){

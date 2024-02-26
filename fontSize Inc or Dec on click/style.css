@@ -8,9 +8,11 @@ body {
 .container {
     display: block;
     width: 100%;
-    background-color: #a2dff2;
-    height: 100%;
+    background-image: url('curve-shap-bg.png');
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
 }
 
 
@@ -26,12 +28,14 @@ body {
     text-transform: capitalize;
 }
 
-#button_div {
+.font-dec,
+.font-inc {
     text-align: center;
     padding: 20px 0;
 }
 
-#button_div button#button {
+.button-sec .font-dec-btn,
+.button-sec .font-inc-btn {
     border: none;
     background-color: #beb8b8ba;
     padding: 20px 20px;
@@ -50,25 +54,9 @@ body {
     min-width: 200px;
 }
 
-#button_div button#button:hover {
-    color: #fff;
+.button-sec .font-dec-btn:hover,
+.button-sec .font-inc-btn:hover {
+    color: #000000;
     background: transparent;
-    border-color: #fff;
-}
-
-.text-color {
-    font-family: cursive;
-    font-size: 20px;
-    color: #fff;
-    text-transform: capitalize;
-    line-height: normal;
-    padding: 20px 0;
-}
-
-.body-text-color {
-    font-family: cursive;
-    font-size: 20px;
-    color: #000;
-    text-transform: capitalize;
-    line-height: normal;
+    border-color: #000000;
 }
