@@ -53,8 +53,8 @@ body {
 .button-sec .font-dec-btn,
 .button-sec .font-inc-btn {
     border: none;
-    background-color: #beb8b8ba;
-    padding: 20px 20px;
+    background-color: #c9c4c4;
+    padding: 15px 20px;
     cursor: pointer;
     font-size: 20px;
     text-decoration: none;
@@ -70,9 +70,16 @@ body {
     min-width: 200px;
 }
 
+.button-sec .font-inc-btn span,
+.button-sec .font-dec-btn span {
+    font-size: 30px;
+    line-height: 1;
+    padding-left: 2px;
+}
+
 .button-sec .font-dec-btn:hover,
 .button-sec .font-inc-btn:hover {
-    color: #000000;
+    color: #f97369;
     background: transparent;
-    border-color: #000000;
+    border-color: #f97369;
 }
