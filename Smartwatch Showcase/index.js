@@ -1,3 +1,7 @@
+// <!-- 5.] Smartwatch Showcase  -->
+
+
+// complete your order button js
 $('.order').click(function(e) {
 
     let button = $(this);
@@ -11,6 +15,7 @@ $('.order').click(function(e) {
 
 });
 
+// on click watch color change
 var black_btn = document.querySelector('.black-button');
 var red_btn = document.querySelector('.red-button');
 var blue_btn = document.querySelector('.blue-button');
