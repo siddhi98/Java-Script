@@ -81,11 +81,38 @@ img.amazon-logo {
     color: black;
 }
 
+.time-img-heart {
+  position: relative;
+}
+
 img {
     display: block;
     width: 100%;
     object-fit: cover;
     margin: 0 auto;
+}
+
+.time-on-img {
+  position: absolute;
+  /* display: block; */
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.time-on-img h4#clock,
+.time-on-img h4#heart {
+  font-size: 20px;
+  color: #fff;
+}
+
+.show {
+  display: block;
+}
+
+.close {
+  display: none;
 }
 
 button.button {
