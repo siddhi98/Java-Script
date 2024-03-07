@@ -115,6 +115,10 @@ img {
   display: none;
 }
 
+.button-sec {
+  display: flex;
+}
+
 button.button {
     height: 40px;
     width: 50px;
@@ -149,15 +153,23 @@ button.purple-button.button {
     padding: 0;
 }
 
-button.fea-button {
-    border: none;
+.features-btn button.fea-button {
     font-size: 14px;
+    border: 1px solid #232f3e;
+    background: var(--white);
+    color: var(--blue);
+    outline: none;
+    cursor: pointer;
+    border-radius: 32px;
     padding: 10px 20px;
-    border-radius: 3px;
     font-weight: 700;
     font-family: Montserrat;
     margin: 0 10px;
-    cursor: pointer;
+}
+
+.features-btn button.fea-button:hover {
+  background: var(--blue);
+  color: var(--white);
 }
 
 button.fea-button.time {
@@ -176,7 +188,7 @@ button.fea-button.heart-rate {
     border-radius: 3px;
 } */
 
-/* <!-- order confirm animation using html css and javascript --> */
+/* <!-- order confirm animation using html css start --> */
   .order {
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -622,3 +634,87 @@ button.fea-button.heart-rate {
     display: block;
     height: 28px;
   }
+
+/* <!-- order confirm animation using html css end --> */
+
+
+  /*  Heart beat css start */
+
+
+  .heart-container {
+    position: relative;
+    width: 100px;
+    height: 160px;
+    margin: 30vh auto;
+  }
+  
+  .heart {
+    width: 30px;
+    height: 48px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    /* transform: rotate(-45deg); */
+    transform: rotate(-45deg) translate(-50%, -50%);
+    transition: transform 0.5s;
+    animation: heartbeat 1s infinite alternate;
+    cursor: pointer;
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 100px 100px 0 0;
+    position: absolute;
+    background-color: #e74c3c;
+    box-shadow: -10px 6px 10px -2px rgba(0, 0, 0, 0.25);
+  }
+  
+  .heart:before {
+    left: 44%;
+    top: 0;
+    transform: scale(-1) rotate(225deg);
+  }
+  
+  .heart:after {
+    left: 0;
+    top: 0;
+    transform: scale(-1) rotate(-225deg);
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .heart:hover:before,
+  .heart:hover:after {
+    background-color: darkred;
+    box-shadow: none;
+    transition: 2.5s all;
+  }
+  
+  .heart-container:active {
+    transform: scale(0);
+    transition: 3s all;
+  }
+  /*  Heart beat css end */
+
+
+  .tooltip {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    cursor: pointer;
+}

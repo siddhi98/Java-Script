@@ -110,8 +110,8 @@ var clock = document.querySelector('#clock');
 
 
 function heartRate(){
-    clock_display.innerHTML = "heart";
-    console.log("hello");
+    // clock_display.innerHTML = "heart";
+    // console.log("hello");
     clock_display.classList.add('show');
     clock_display.classList.remove('close');
     clock.classList.remove('show');
