@@ -1,0 +1,129 @@
+/* <!-- 7.] To Do List  --> */
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('To\ Do\ List\ Planner.png');
+    text-align: center;
+    height: 100%;
+}
+
+header.header {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+h1.to-do-list {
+    font-family: cursive;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: #da5e3d;
+}
+
+section.list-item-sec {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+button.add-item,
+button.remove-item {
+    padding: 10px 15px;
+    border: 2px solid #e69d93;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    color: #e69d93;
+    font-size: 20px;
+    font-family: monospace;
+    margin: 20px 0 10px 0;
+    background-color: transparent;
+}
+
+button.remove-item {
+    color: #749c78;
+    border-color: #749c78;
+}
+
+button.add-item:hover {
+    background-color: #e69d93;
+    color: #fff;
+}
+
+button.remove-item:hover {
+    color: #fff;
+    background-color: #749c78;
+}
+
+.list-items {
+    list-style: none;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 0;
+}
+
+.list-item {
+    /* border: 2px solid #749c78;
+    padding: 15px;
+    margin: 20px 0 20px 0px;
+    border-radius: 3px; */
+    /* font-size: 20px;
+    font-family: cursive;
+    color: #749c78; */
+    /* background-color: transparent;
+    cursor: pointer; */
+    position: relative;
+}
+
+.list-item-input::placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: cursive;
+    color: #749c78;
+    pointer-events: none;
+}
+
+.list-item-input {
+    border: 2px solid #749c78;
+    padding: 15px;
+    margin: 20px 0 20px 0px;
+    border-radius: 3px;
+    background-color: transparent;
+    /* cursor: pointer; */
+    width: 100%;
+}
+
+.list-item-input:focus {
+    outline: none;
+}
+
+.list-item:hover .list-item-input {
+    background-color: #749c78;
+}
+
+.list-item:hover .list-item-input::placeholder {
+    color: #fff;
+}
+
+.no-list {
+    font-family: cursive;
+    font-size: 22px;
+    padding-top: 15px;
+    font-weight: lighter;
+    color: #749c78;
+    margin-top: 20px;
+}
