@@ -23,6 +23,7 @@ let currentDisplay = '0';
 let operator = '';
 
 function appendToDisplay(value) {
+    console.log(value);
   if (currentDisplay === '0' && value !== '.') {
     currentDisplay = value;
   } else {
@@ -32,6 +33,8 @@ function appendToDisplay(value) {
 }
 
 function appendOperator(op) {
+    console.log(op);
+
   if (currentDisplay !== '0' && !operator) {
     currentDisplay += op;
     operator = op;
@@ -54,5 +57,5 @@ function calculate() {
 }
 
 function updateDisplay() {
-  document.getElementById('display').innerText = currentDisplay;
+  document.querySelector('#display').innerText = currentDisplay;
 }
