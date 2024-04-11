@@ -1,4 +1,4 @@
- /* <!-- 8.] calculator  -->
+ /* <!-- 8.] calculator  --> */
 
 body {
     display: block;
@@ -29,10 +29,14 @@ h1.title {
   
   .display {
     width: 100%;
+    font-family: cursive;
     max-width: 276px;
     padding: 10px;
     font-size: 24px;
-    text-align: left;
+    text-align: right;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 5px;
     margin-bottom: 10px;
   }
   
@@ -60,9 +64,9 @@ h1.title {
 
 .cal-button.num {
     background-color: #e57244;
-} */
+}
 
-
+/* 
 
 .calculator {
     max-width: 300px;
@@ -105,4 +109,4 @@ h1.title {
   button:active {
     transform: translateY(2px);
   }
-  
+   */
