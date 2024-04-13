@@ -106,10 +106,6 @@ document.addEventListener('keydown', function(event) {
 
 });
 
-
-
-
-
 function calculate(){
   if( operator && curren_display !== '0' ){
     curren_display = eval(curren_display).toString();
