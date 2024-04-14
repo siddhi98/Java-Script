@@ -36,7 +36,6 @@ document.addEventListener('keydown', function(event) {
 
 });
 
-
 // onclick numbers button
 function appendToDisplay(value) {
   if (value == '0' && value != "."){
