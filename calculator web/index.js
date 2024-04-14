@@ -7,8 +7,13 @@ var display = document.querySelector('.display');
 document.addEventListener('keydown', function(event) {
   var keyName = event.key;
   if (!isNaN(keyName)){
-    if (keyName == '0' && keyName != "."){
-      curren_display == keyName;
+    if (curren_display == '0' && keyName != "."){
+      if(keyName == '0'){
+        curren_display == keyName;
+      }
+      else{
+        curren_display += keyName;
+      }
     }
     else{
       curren_display += keyName;
@@ -33,8 +38,13 @@ document.addEventListener('keydown', function(event) {
 
 // onclick numbers button
 function appendToDisplay(value) {
-  if (value == '0' && value != "."){
-    curren_display == value;
+  if (curren_display == '0'){
+    if( value == '0' && value != "."){
+      curren_display == value;
+    }
+    else{
+      curren_display += value;
+    }
   }
   else{
     curren_display += value;
