@@ -1,6 +1,4 @@
 //  <!-- 8.] calculator  -->
-
-
 var curren_display = "0";
 var operator = "";
 var display = document.querySelector('.display');
@@ -15,13 +13,11 @@ document.addEventListener('keydown', function(event) {
     else{
       curren_display += keyName;
     }
-  
     updateDisplay();
   }
  else if(keyName == '+' || keyName == '-' || keyName == '*' || keyName == '/'){
     curren_display += keyName;
     updateDisplay();
-
   }
   else if(keyName == 'Enter'){
     calculate();
@@ -31,7 +27,6 @@ document.addEventListener('keydown', function(event) {
   }
   else{
     updateDisplay();
-
   }
 
 });
