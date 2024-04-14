@@ -1,90 +1,15 @@
-// // //  <!-- 8.] calculator  -->
-
-// let currentDisplay = '0';
-// let operator = '';
-
-// function appendToDisplay(value) {
-//     console.log(value);
-//   if (currentDisplay === '0' && value !== '.') {
-//     currentDisplay = value;
-//   } else {
-//     currentDisplay += value;
-//   }
-//   updateDisplay();
-// }
-
-// function appendOperator(op) {
-//     console.log(op);
-
-//   if (currentDisplay !== '0' && !operator) {
-//     currentDisplay += op;
-//     operator = op;
-//   }
-//   updateDisplay();
-// }
-
-// function clearDisplay() {
-//   currentDisplay = '0';
-//   operator = '';
-//   updateDisplay();
-// }
-
-// function calculate() {
-//   if (operator && currentDisplay !== '0') {
-//     currentDisplay = eval(currentDisplay).toString();
-//     operator = '';
-//   }
-//   updateDisplay();
-// }
-
-// function updateDisplay() {
-//   document.querySelector('#display').innerText = currentDisplay;
-// }
-
+//  <!-- 8.] calculator  -->
 
 
 var curren_display = "0";
 var operator = "";
 var display = document.querySelector('.display');
 
-function appendToDisplay(value) {
-  console.log(value);
-  if (curren_display === 0 && value != "."){
-    curren_display == value;
-  }
-  else{
-    curren_display += value;
-  }
-
-  updateDisplay();
-
-};
-
-
-function appendOperator(op){
-  if( curren_display !== 0 ){
-    curren_display += op;
-    operator = op;
-  }
-
-
-  updateDisplay();
-
-};
-
-
-
-
-
-
-
-
-
+// code for calculator using key
 document.addEventListener('keydown', function(event) {
   var keyName = event.key;
   if (!isNaN(keyName)){
-    console.log("key is num:" + keyName );
-    if (curren_display === 0 && keyName != "."){
+    if (keyName == '0' && keyName != "."){
       curren_display == keyName;
     }
     else{
@@ -95,9 +20,14 @@ document.addEventListener('keydown', function(event) {
   }
  else if(keyName == '+' || keyName == '-' || keyName == '*' || keyName == '/'){
     curren_display += keyName;
-    console.log("error " + keyName);
     updateDisplay();
 
+  }
+  else if(keyName == 'Enter'){
+    calculate();
+  }
+  else if(keyName == 'c'){
+    clearDisplay();
   }
   else{
     updateDisplay();
@@ -106,22 +36,47 @@ document.addEventListener('keydown', function(event) {
 
 });
 
+
+// onclick numbers button
+function appendToDisplay(value) {
+  if (value == '0' && value != "."){
+    curren_display == value;
+  }
+  else{
+    curren_display += value;
+  }
+
+  updateDisplay();
+};
+
+// onclick operator button like +,-,*,/
+function appendOperator(op){
+  if( curren_display !== '0' ){
+    curren_display += op;
+    operator = op;
+  }
+
+  updateDisplay();
+};
+
+// onclick = button or Enter key 
 function calculate(){
-  if( operator && curren_display !== '0' ){
+  if( curren_display != '0' ){
     curren_display = eval(curren_display).toString();
     operator = "";
   }
   updateDisplay();
 };
 
+
+// onclick C button or C key 
 function clearDisplay(){
-  curren_display = 0;
+  curren_display = '0';
   operator = "";
   updateDisplay();
 };
 
-
+// display final result 
 function updateDisplay (){
-
   display.innerHTML = curren_display;
 };
