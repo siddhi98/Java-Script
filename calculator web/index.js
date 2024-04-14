@@ -68,7 +68,6 @@ function calculate(){
   updateDisplay();
 };
 
-
 // onclick C button or C key 
 function clearDisplay(){
   curren_display = '0';
