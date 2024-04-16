@@ -17,51 +17,34 @@ h1.title {
   line-height: 1;
 }
 
-.calculator {
-  max-width: 300px;
-  margin: 200px auto;
-  display: block;
-  height: 100%;
-  padding: 30px 30px;
-  background-color: black;
-  border-radius: 15px
+.slider-div {
+
 }
-  
-.display {
+
+.slider-div .slide {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: baseline;
   width: 100%;
-  font-family: cursive;
-  max-width: 276px;
-  padding: 10px;
-  font-size: 24px;
-  text-align: right;
-  background-color: #ffffff;
-  color: #000;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-  
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  height: 100%;
 }
 
-  
-.cal-button {
-  padding: 25px 15px;
-  font-size: 22px;
+.img-slide {
   display: block;
-  text-align: center;
-  font-weight: 300;
-  cursor: pointer;
-  font-family: cursive;
-  line-height: 1;
-  color: #ffffff;
-  background-color: #545050;
-  border: none;
-  border-radius: 50%;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.active {
+  display: block;
 }
 
-.cal-button.num {
-  background-color: #e57244;
+.no-active {
+  display: none;
 }
