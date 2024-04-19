@@ -19,8 +19,10 @@ body {
   font-size: 40px;
   font-weight: 500;
   color: #ff5e00;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: cursive;
 }
 
 .slider-div {
@@ -28,6 +30,7 @@ body {
   max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  padding-top: 10px;
 }
 
 .slide {
@@ -56,45 +59,63 @@ body {
   transform: translateX(0%);
 }
 
-/* Previous and Next Buttons
+/* Previous and Next Buttons */
 .prev,
 .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   color: #fff;
   border: none;
   cursor: pointer;
-  padding: 10px 20px;
-  font-size: 20px;
+  margin: 25px;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
-.prev {
-  left: 0;
+.prev:hover,
+.next:hover {
+  border-color: rgb(242, 173, 173);
 }
 
-.next {
-  right: 0;
-} */
-
-
-button {
+.prev::after,
+.next::after {
+  border-bottom-style: solid;
+  border-color: #ffffff;
+  border-bottom-width: 2px;
+  border-right-style: solid;
+  border-right-width: 2px;
+  content: "";
+  display: inline-block;
+  height: 12px;
+  left: 45%;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #ff5e00;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+  top: 45%;
+  width: 12px;
+  transform: translate(-50%, -50%);
+}
+
+.prev:hover::after,
+.next:hover::after {
+  border-color: rgb(242, 173, 173);
 }
 
 .prev {
   left: 0;
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .next {
   right: 0;
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
 }
