@@ -37,4 +37,4 @@ prev.addEventListener('click', function(){
 showSlide(currentSlide);
 
 // Automatic slide change every 3 seconds
-// setInterval(nextSlide, 3000);
+setInterval(nextSlide, 3000);
